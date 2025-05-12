@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube Transcript Extractor</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f9f9f9;
+        padding: 15px;
+        margin: 0;
+        width: 320px;
+        color: #333;
+      }
+
+      h3 {
+        margin-top: 0;
+        font-size: 18px;
+        color: #202124;
+        text-align: center;
+      }
+
+      button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        background-color: #1a73e8;
+        color: white;
+        font-weight: 600;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+      }
+
+      button:hover {
+        background-color: #155ab6;
+      }
+
+      button:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+      }
+
+      pre {
+        margin-top: 10px;
+        background: white;
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid #ddd;
+        font-size: 13px;
+        line-height: 1.4;
+        max-height: 300px;
+        overflow-y: auto;
+        white-space: pre-wrap;
+        word-break: break-word;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Transcript Extractor</h3>
+    <button id="downloadBtn" disabled>Download Transcript</button>
+    <pre id="transcript">Loading transcript...</pre>
+    <script src="popup.js"></script>
+  </body>
+</html>
